@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --strong-cyan:hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(212, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.125rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    color: var(--dark-grayish-blue);
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(205, 205, 205,0.1);
+}
+
+.container > *{
+    padding: 0 0.1rem;
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.top-section img{
+    display: block;
+    max-width: 95%;
+    margin: 4rem auto 2.5rem auto;
+}
+
+.intro-heading{
+    margin-bottom: 1.3rem;
+}
+
+.description{
+    margin-bottom: 2rem;
+    line-height: 2rem;
+
+}
+
+.btn{
+    display: block;
+    padding: 1.5rem 5rem;
+    border-radius: 50px;
+    margin: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    box-shadow: 0px 5px 0px 0px rgba(76, 84, 93,0.4);
+}
+
+.btn-first{
+    background-color: var(--strong-cyan);
+}
+
+.btn-second{
+    background-color: var(--light-blue);
+}
+
+.btn-container{
+    margin-bottom: 5rem;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-feature{
+    margin-bottom: 2.5rem;
+}
+
+.feature-heading{
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.feature-img{
+    display: block;
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.feature-four{
+    margin-bottom: 8rem;
+}
+
+.sub-feature-img{
+    margin-bottom: 2rem;
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.company-logo{
+    margin: 2.5rem 0;
+}
+
+footer{
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: var(--dark-grayish-blue);
+}
+
+footer a:hover{
+    color: var(--strong-cyan);
+}
+
+
+footer img{
+    max-width: 20%;
+    margin-bottom: 1rem;
+}
+
+footer a{
+    margin: 1rem 0;
+    text-decoration: none;
+}
+.social-links{
+    margin-top: 2rem;
+}
+.social-links i{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.social-links i:hover{
+    color: var(--strong-cyan);
+}
+
+@media screen and (min-width:1365px) {
+    html{
+        font-size: 20px;
+    }
+
+    .container{
+        max-width: 1365px;
+        margin-bottom: 1.5rem;
+    }
+
+    .top-section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    }
+
+    .top-section img{
+        grid-column: 1/13;
+    }
+    
+    .intro{
+        grid-column: 3/11;
+    }
+
+    .btn-container{
+        display: flex;
+        grid-column: 3/11;
+        justify-content: center;
+    }
+
+    .btn{
+       padding: 1rem 3rem;
+       margin: 0.8rem; 
+    }
+
+    .description{
+        margin: 0 auto;
+        max-width: 55%;
+    }
+
+    .feature{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    .feature-img{
+        margin: 0px;
+        padding: 0;
+    }
+
+    .grid-feature{
+        margin-bottom: 1.5rem;
+
+    }
+
+    .feature-one{
+        grid-column: 1/ span 12;
+        grid-row: 1/ span 1;
+    }
+
+    .feature-img-one{
+        grid-column: 1 / span 7;
+        grid-row: 2/ span 5;
+    }
+
+    .desc-margin-zero{
+        margin: 0;
+        margin-left: 0;
+        padding: 0 20px;
+        max-width: none;
+    }
+
+    .feature-two{
+        grid-column: 8 /span 5;
+        grid-row: 3/4;
+        text-align: left;
+    }
+
+    .feature-three{
+        grid-column: 8 /span 4;
+        grid-row: 4/5;
+        text-align: left;
+    }
+    .feature-four{
+        grid-column: 8 /span 4;
+        grid-row: 5/6;
+        text-align: left;
+    }
+
+    .feature-five{
+        margin-top: 100px;
+        grid-column: 1 / span 12;
+    }
+
+    .feature-img-two{
+        grid-column: 1/ span 12;
+        margin: 0 auto;
+    }
+
+    .feature-six{
+        grid-column: 1/ span 12;
+    }
+
+    .feature-seven{
+        grid-column: 1 /span 4;
+    }
+
+    .feature-eight{
+       grid-column: 5 /span 4; 
+    }
+
+    .feature-nine{
+       grid-column: 9 /span 4; 
+    }
+
+    .feature-last-three{
+        max-width: none;
+    }
+
+    .grid-feature h2{
+        margin-bottom: 0;
+    }
+
+    .company{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .download{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        align-items: center;
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    footer a{
+        margin: 0;
+    }
+
+    .logo{
+        margin: 0;
+        padding: 0;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        max-width: 100%;
+        width: 70px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        grid-column: 10 / 13;
+        grid-row: 1/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .social-links i{
+        font-size: 1.5rem;
+    }
+
+    .faq{
+        justify-self: start;
+    }
+
+    .contact{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: start;
+    }
+
+    .privacy{
+        grid-column: 5/6;
+        justify-self: start;
+    }
+
+    .press-kit{
+        grid-column: 5/6;
+        grid-row:2/3;
+        justify-self: start;  
+    }
+
+    .install-guide{
+        grid-column: 7/8;
+    }
+
+    
+
+}
